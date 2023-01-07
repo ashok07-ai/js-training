@@ -43,12 +43,12 @@ const arra2 = [10, 12, 14, 34];
 const combined_array = arr1.concat(arra2);
 console.log(combined_array)
 
-// let arr3 = [7, 8, 9];
-// let arr4 = [1, 2, 3];
-// let arr5 = [4, 5, 6];
-// let combined_result_one = arr4.concat(arr5, arr3);
-// // let combined_result_two = combined_result_one.concat(arr3);
-// console.log(combined_result_one)
+let arr3 = [7, 8, 9];
+let arr4 = [1, 2, 3];
+let arr5 = [4, 5, 6];
+let combined_result_one = arr4.concat(arr5, arr3);
+// let combined_result_two = combined_result_one.concat(arr3);
+console.log(combined_result_one)
 
 
 // 9. Splice (Add new items to array)
