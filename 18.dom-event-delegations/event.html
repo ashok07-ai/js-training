@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./event.css">
+</head>
+
+<body>
+    <ul id="sports">
+        <li id="football">Football</li>
+        <li id="basketball">BasketBall</li>
+        <li id="boxing">Boxing</li>
+        <li id="tennis">Tennis</li>
+        <li id="golf">Golf</li>
+    </ul>
+    <h5 id="message">No sports selected</h5>
+
+    <div class="select-data">
+        <select id="selectSubject" onchange="subjectSelection(event)">
+            <option value="0" disabled selected>Select Subject</option>
+            <option value="c++">C++</option>
+            <option value="maths">Maths</option>
+            <option value="ds">Discrete Structure</option>
+        </select>
+
+        <h5 id="subjectMessage">No subject selected</h5>
+
+    </div>
+    <script src="./event.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./event.css">
+</head>
+
+<body>
+    <h1 id="main-heading">Event Listeners</h1>
+    <div class="container">
+        <div class="boxes box-1">
+            <div id="heading">Example 1</div>
+            <button>Click</button>
+        </div>
+        <div class="boxes box-2">
+            <div id="heading">Example 2</div>
+            <button class="btn-2">Dbl Click</button>
+        </div>
+        <div class="boxes box-3">
+            <div id="heading">Example 3</div>
+            <button class="btn-3">Mouse Over</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <button class="show-more-button boxes">
+            <h1 id="text-heading">Show More</h1>
+        </button>
+
+        <div class="hidden-content boxes">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus cupiditate voluptates nostrum quaerat
+            voluptatibus praesentium animi velit nemo consequuntur illo cum tempore nulla id, dolor tenetur magnam quo?
+            Mollitia, inventore!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus cupiditate voluptates nostrum quaerat
+            voluptatibus praesentium animi velit nemo consequuntur illo cum tempore nulla id, dolor tenetur magnam quo?
+            Mollitia, inventore!Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus cupiditate
+            voluptates nostrum quaerat
+            voluptatibus praesentium animi velit nemo consequuntur illo cum tempore nulla id, dolor tenetur magnam quo?
+            Mollitia, inventore!
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Image Hide and Show Example -->
+    <div class="image-container">
+        <button class="show-image">Show Image</button>
+        <button class="hide-image">Hide Image</button>
+        <img class="image-details" src="./image.PNG" alt="">
+    </div>
+
+    <hr>
+
+    <!-- Increment and Decrement Example -->
+
+    <div class="inc-dec-container">
+        <div id="increment-count">
+            <button class="inc">Incerement</button>
+        </div>
+        <div id="total-count">
+        </div>
+        <div id="decrement-count">
+            <button class="dec">Decrement</button>
+        </div>
+        <div id="resets">
+            <button class="reset">Reset</button>
+        </div>
+    </div>
+    <script src="./event.js"></script>
+</body>
+
+</html>

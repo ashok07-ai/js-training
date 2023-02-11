@@ -1,0 +1,63 @@
+body {
+  height: 100vh;
+  background-color: blueviolet;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#add-task-container {
+  text-align: center;
+}
+#add-task-container input {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background: #3a3939;
+  color: white;
+  font-size: 13px;
+  width: 96%;
+}
+
+#content-list {
+  background-color: #f4e9e9;
+  width: 500px;
+  padding: 15px;
+  border-radius: 7px;
+  margin-top: 10px;
+}
+
+#to-do-box {
+  padding: 0px;
+  margin-top: 20px;
+  list-style: none;
+}
+
+#to-do-box li {
+  position: relative;
+  background-color: #2c3e50;
+  color: white;
+  padding: 10px;
+  border-radius: 2px;
+  padding-right: 30px;
+  text-align: justify;
+  margin-top: 10px;
+  user-select: none;
+  cursor: pointer;
+}
+
+#to-do-box li i {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+/* --------------------- */
+.delete {
+  float: right;
+  background-color: #e20a0a;
+  border: none;
+  color: white;
+  border-radius: 3px;
+  font-size: 15px;
+}
