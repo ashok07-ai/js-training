@@ -1,0 +1,53 @@
+body {
+  background-color: blueviolet;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+
+.card {
+  background-color: white;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  width: 500px;
+}
+.card-body {
+  padding: 40px;
+}
+
+input {
+  padding: 8px;
+  background-color: rgb(50, 50, 50);
+  color: white;
+  border-radius: 7px;
+  width: 96%;
+  cursor: not-allowed;
+}
+
+button {
+  padding: 7px;
+  margin-top: 10px;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+}
+
+#gen-password {
+  background-color: rgb(3, 33, 116);
+  color: white;
+}
+
+#copy-password {
+  background-color: rgb(5, 169, 245);
+  color: white;
+  float: right;
+}
+
+#gen-otp {
+  margin-left: 1rem;
+  background-color: blueviolet;
+  color: white;
+}

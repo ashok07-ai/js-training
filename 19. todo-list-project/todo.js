@@ -1,18 +1,19 @@
 const item = document.querySelector("#input-task")
 const toDoBox = document.querySelector("#to-do-box");
 const noListFound = document.querySelector("#no-data");
-let count = 0
-
+let count = 1
+const data = [];
 
 item.addEventListener("keyup", function (event) {
-    if (event.key == "Enter") {
+    if (event.key == "Enter" && event.target.value != "") {
         noListFound.style.display = "none"
-        addToDo(event.target.value)
+        addToDo(event.target.value);
         event.target.value = "";
         count++
     }
 }
 )
+
 
 const addToDo = (item) => {
     // for creating the list of todos
@@ -24,7 +25,11 @@ const addToDo = (item) => {
         <button class="delete">X</button>
     `;
 
-    toDoBox.appendChild(listItem)
+    toDoBox.appendChild(listItem);
+    data.push(item);
+    localStorage.setItem("save-todo-datas", JSON.stringify(data));
+    console.log(data)
+
 
 
     // for checking the done todo lists
@@ -42,7 +47,18 @@ const addToDo = (item) => {
             confirm(
                 "Are you sure to delete!!",
                 listItem.remove()
+
             )
+            // let saveToDoDatas = []
+            saveToDoDatas = JSON.parse(localStorage.removeItem("save-todo-datas"));
+
+            saveToDoDatas.forEach((value, index) => {
+                console.log("value: ", value, "and index is: ", index)
+            })
+            console.log("--", saveToDoDatas)
+            // saveToDoDatas.pop()
+            // localStorage.setItem("save-todo-datas", JSON.stringify(saveToDoDatas))
+
             count--;
             if (count === 0) {
                 noListFound.style.display = "block"
@@ -50,4 +66,13 @@ const addToDo = (item) => {
             }
         }
     )
+}
+
+window.onload = () => {
+
+    let savedListData = JSON.parse(localStorage.getItem("save-todo-datas"));
+    savedListData.forEach(savedDatas => {
+        addToDo(savedDatas)
+    });
+
 }

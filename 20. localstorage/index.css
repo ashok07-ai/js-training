@@ -1,0 +1,24 @@
+body {
+  height: 50vh;
+  background-color: rgb(39, 8, 69);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  list-style: none;
+}
+
+input {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background: white;
+  color: black;
+  font-size: 13px;
+  width: 500px;
+}
+
+.info-details {
+  color: white;
+  font-size: 20px;
+}
