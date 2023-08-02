@@ -47,3 +47,35 @@ function caluclation(num1, num2, myCallBackFunction) {
 }
 
 caluclation(20, 40, displayResult)
+
+
+// Assignment of addition, subttraction, multiplication
+
+// addition
+function addition(num1, num2, callBack) {
+    const result = num1 + num2;
+    callBack(result)
+}
+
+// subtraction
+function subtraction(num1, num2, callBack) {
+    const result = num1 - num2;
+    callBack(result)
+}
+
+// multiplication
+function multiplication(num1, num2, callBack) {
+    const result = num1 * num2;
+    callBack(result)
+}
+
+// display result
+function displayResult(result) {
+    console.log(result)
+}
+
+let a = parseInt(prompt("Enter first number"));
+let b = parseInt(prompt("Enter second number"));
+addition(a, b, displayResult)
+subtraction(a, b, displayResult)
+multiplication(a, b, displayResult)
